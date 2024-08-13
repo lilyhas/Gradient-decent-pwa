@@ -1,12 +1,12 @@
-let GHPATH = '/creatures-web-app-simple';
-let APP_PREFIX = 'cwas_';
+let GHPATH = '/Gradient-decent-pwa';
+let APP_PREFIX = 'D-d-pwa';
 let VERSION = 'version_001';
 let URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
-  `${GHPATH}/css/style.css`,
+  `${GHPATH}/public/style.css`,
   `${GHPATH}/javascript/libs/p5.js`,
-  `${GHPATH}/javascript/libs/p5.sound.min.js`,
+  `${GHPATH}/javascript/libs/p5.geolocation.js`,
   `${GHPATH}/javascript/sketch.js`
 ]
 
