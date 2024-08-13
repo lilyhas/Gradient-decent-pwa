@@ -2,8 +2,8 @@
     "name": "Descending the Gradient",
     "short_name": "gradient",
     "display": "fullscreen",
-    "scope": "/creatures-web-app-simple/",
-    "start_url": "/creatures-web-app-simple/",
+    "scope": "/    Gradient-decent-pwa/",
+    "start_url": "/Gradient-decent-pwa/",
     "icons": [
        {
    "src": "assets/icons/android-icon-36x36.png",
