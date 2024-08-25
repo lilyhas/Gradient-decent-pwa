@@ -319,7 +319,7 @@ button.parent("gui-container");
 button.mousePressed(handleButtonPress); 
 
 // add another button with a link to go to home page
-link = createA("../pages/index.html",'Back');
+link = createA("../index.html",'Back');
 link.addClass("button");
 link.parent("gui-container");
 
