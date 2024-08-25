@@ -74,7 +74,7 @@ main.documentation-page h2{
 
 li{
     font-family: 'Merriweather', serif;
-    font-size: 120%;
+    font-size: 2vw;
     
     color:rgb(255, 255, 255);
     line-height: 1.6em;
@@ -130,9 +130,9 @@ header{
 }
 
 header.documentation-header{
-    padding: 0 3%;
-    /* padding: 30px 3%;  */
-    margin: 0px 0px 40px 0px;
+    /* padding: 0 3%; */
+    padding: 30px 3%; 
+    /* margin: 0px 0px 40px 0px; */
 }
 
 /* 
