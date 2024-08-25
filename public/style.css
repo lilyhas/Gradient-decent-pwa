@@ -17,7 +17,7 @@ body{
 }
 
 header h1{
-    font-size: 800%;
+    font-size: 10vw;
     /* margin: 0% 0% 0% 0%; */
     /* margin:20px 0; */
     margin: 0px 0px 40px 0px;
@@ -32,7 +32,7 @@ header h2{
     padding-bottom: 100px;
     /* padding:100px 3%; */
     font-family: 'Merriweather', serif;
-    font-size: 400%;
+    font-size: 5vw;
     margin: 0px 0px 40px 0px;
     color:rgb(255, 255, 255);
     font-weight: normal;
@@ -45,7 +45,7 @@ header h3{
     padding-bottom: 20px;
     /* padding:100px 3%; */
     font-family: 'Merriweather', serif;
-    font-size: 30px;
+    font-size: 2vw;
     margin: 0px 0px 40px 0px;
     color:rgb(255, 255, 255);
     font-weight: normal;
@@ -54,7 +54,7 @@ header h3{
 
 main.documentation-page h3{
     padding-bottom: 20px;
-    font-size: 150%;
+    font-size: 5vw;
     margin-top: 0px;
     color:rgb(255, 255, 255);
     /* font-family: Cambria,serif;  */
@@ -64,7 +64,7 @@ main.documentation-page h3{
 }
 main.documentation-page h2{
     padding-bottom: 100px;
-    font-size: 400%;
+    font-size: 7vw;
     margin-top: 0px;
     color:rgb(255, 255, 255);
     /* font-family: Cambria,serif;  */
@@ -242,7 +242,7 @@ img{
     display: flex; /* all children will now be flex items */
     flex-direction: row; /* other option is column */
     flex-wrap: wrap; /* means the children will wrap to a new line */
-}
+} 
 
 .flex-item{
     display: flex;
@@ -299,7 +299,7 @@ img{
    margin:10px;
    background-color: rgb(0, 0, 0);
    padding:5px 10px;
-}
+} */
 
 a.button {
     padding: 1px 6px;
