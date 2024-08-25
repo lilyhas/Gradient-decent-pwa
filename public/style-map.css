@@ -22,7 +22,7 @@ html, body {
   }
   
   #gui-container{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 10px;
     z-index: 100;
@@ -48,6 +48,7 @@ html, body {
     text-decoration: none;
     font-family: 'Merriweather', serif;
     font-size: 5vw;
+    align-items: left;
   }
   .button:hover{
     background-color:rgb(255, 162, 108);
