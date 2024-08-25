@@ -2,7 +2,7 @@
 /*This is a comment in CSS*/
 @font-face {
     font-family: 'Merriweather'; /* Name your font family */
-    src: url('/Merriweather-Regular.ttf'); /* Locate the .ttf file within your directory*/
+    src: url('/public/Merriweather-Regular.ttf'); /* Locate the .ttf file within your directory*/
   }
 
 body{
