@@ -47,7 +47,7 @@ html, body {
     background-color: buttonface; */
     text-decoration: none;
     font-family: 'Merriweather', serif;
-    font-size: 90%;
+    font-size: 5vw;
   }
   .button:hover{
     background-color:rgb(255, 162, 108);
@@ -63,7 +63,7 @@ html, body {
     background-color: buttonface; */
     text-decoration: none;
     font-family: 'Merriweather', serif;
-    font-size: 90%;
+    font-size: 5vw;
   }
 
 
