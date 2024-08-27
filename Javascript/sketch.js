@@ -425,7 +425,7 @@ function exportVideo(e) {
   document.body.appendChild(a);
   a.style = 'display: none';
   a.href = url;
-  a.download = 'myMap.mov';
+  a.download = 'myMap.mp4';
   a.click();
   window.URL.revokeObjectURL(url);
 
