@@ -57,7 +57,7 @@ main {
 }
 
 .button:hover, .link:hover {
-  background-color: rgb(237, 2, 2);
+  background-color: rgb(255, 98, 0);
   color: #ffffff;
 }
 
