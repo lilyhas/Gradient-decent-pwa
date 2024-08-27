@@ -77,6 +77,10 @@ function setup() {
   background(230);
   frameRate(fr);
 
+  // load custom font
+  FontFace = "Merriweather";
+  textFont(FontFace);
+
   // Initialize hMap with noise values
   for (let i = 0; i < width / res; i++) {
     hMap[i] = [];
@@ -202,11 +206,33 @@ function draw() {
     // this will only change if you change the device
     // orientation
     compassReady();
-    drawCompassArrow(width - 80, 40, bearingToNorth);
+    drawCompassArrow(width - 80, height-40, bearingToNorth);
    }
 
   // Draw black arrow pointing towards xMotion and yMotion
-  drawBlackArrowTowardsPoint(width - 80, 40, xMotion, yMotion);
+  drawBlackArrowTowardsPoint(width - 80, height-40, xMotion, yMotion);
+
+  // draw the lat and lon values
+
+  FontFace = "Merriweather";
+  fill(0);
+  noStroke();
+  textAlign(LEFT);
+  textSize(20);
+  text("Lat: " + lat.toFixed(6), 30, height-40);
+  text("Lon: " + lon.toFixed(6), 30, height-70);
+  // display only the date
+  // Display current date
+  let currentDate = new Date();
+  let dateString = "Date: " + currentDate.toDateString();
+  text(dateString, 30, height - 100);
+
+  // display time
+  let timeString = "Time: " + currentDate.toLocaleTimeString();
+  text(timeString, 30, height - 130);
+
+  // text("Date: " + Date(), 30, height-100);
+
 }
 
 function drawContourLine(x, y, size, a, b, c, d, level) {
@@ -238,6 +264,8 @@ function positionPing() {
   navigator.geolocation.getCurrentPosition(function (position) {
     lat = position.coords.latitude;
     lon = position.coords.longitude;
+    // display the latitude and longitude
+    
     console.log("Lat: " + lat + ", Lon: " + lon);
   }, handleError);
 }
@@ -249,7 +277,7 @@ function drawCompassArrow(x, y, angle) {
   rotate(radians(angle)); // Rotate by the bearing angle
 
   stroke(255, 0, 0);
-  strokeWeight(2);
+  strokeWeight(3);
   fill(255, 0, 0);
 
   // Draw arrow line
@@ -276,7 +304,7 @@ function drawBlackArrowTowardsPoint(x, y, targetX, targetY) {
   rotate(angle);
 
   stroke(0);
-  strokeWeight(2);
+  strokeWeight(3);
   fill(0);
 
   // Draw arrow line
@@ -311,6 +339,7 @@ function addGUI(){
     }
 
   button.addClass("button");
+  button.id("button1");
 
 //Add the play button to the parent gui HTML element
 button.parent("gui-container");
@@ -320,8 +349,11 @@ button.mousePressed(handleButtonPress);
 
 // add another button with a link to go to home page
 link = createA("./index.html",'Back');
+link.id("button2");
 link.addClass("button");
+
 link.parent("gui-container");
+
 
 
 
@@ -393,9 +425,11 @@ function exportVideo(e) {
   document.body.appendChild(a);
   a.style = 'display: none';
   a.href = url;
-  a.download = 'newVid.mp4';
+  a.download = 'myMap.mov';
   a.click();
   window.URL.revokeObjectURL(url);
 
 }
-
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}

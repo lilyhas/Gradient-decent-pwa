@@ -17,7 +17,7 @@ body{
 }
 
 header h1{
-    font-size: 10vw;
+    font-size: 15vw;
     /* margin: 0% 0% 0% 0%; */
     /* margin:20px 0; */
     margin: 0px 0px 40px 0px;
@@ -119,20 +119,22 @@ p2{
 
 main,
 header{
-    width:100%;
+    /* width:100%; */
     max-width:1400px; /* means it won't be larger than 1200px on larger screens */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     color:rgb(255, 255, 255);
     margin: 0 auto;
     padding: 30px 3%;
     background-color: rgba(0, 0, 0, 0);
     font-family: 'Merriweather', serif;
+    
 }
 
 header.documentation-header{
     /* padding: 0 3%; */
-    padding: 30px 3%; 
-    /* margin: 0px 0px 40px 0px; */
+    padding: 20px 3%; 
+    margin: 0px 0px 40px 0px; 
+    font-size: 3vw;
 }
 
 /* 
@@ -351,6 +353,12 @@ a.button {
     .flex-item{
         flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
     }
+
+    .documentation-header section,
+    main.documentation-page section{
+        margin: 40px 5%;
+    }
+
 }
 
 /* Small */
@@ -362,6 +370,12 @@ a.button {
     .flex-item{
         flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
     }
+
+    .documentation-header section,
+    main.documentation-page section{
+        margin: 40px 5%;
+    }
+
 }
 
 a {
